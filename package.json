@@ -1,0 +1,24 @@
+{
+  "name": "ello-engenharia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch ./assets/sass/app.scss:./assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayssa19/Ello-Engenharia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rayssa19/Ello-Engenharia/issues"
+  },
+  "homepage": "https://github.com/rayssa19/Ello-Engenharia#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta2",
+    "node-sass": "^5.0.0"
+  }
+}
