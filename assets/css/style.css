@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -169,6 +170,10 @@ body {
   background-color: #fff;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: "MazzardBold";
+}
+
 @font-face {
   font-family: "MazzardBold";
   src: url("../fonts/Mazzard/MazzardH-Bold.otf") format("woff"), url("../fonts/Mazzard/MazzardH-Bold.otf") format("opentype"), url("../fonts/Mazzard/MazzardH-Bold.otf") format("truetype");
@@ -185,6 +190,34 @@ body {
   background-color: #ca6033;
   color: #ffffff;
 }
+.btn-orange:hover {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.navbar {
+  background-color: #000000 !important;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.navbar .logo {
+  width: 80px;
+}
+.navbar a {
+  color: #ffffff;
+}
+.navbar .nav-link {
+  font-family: "MazzardBold";
+  color: #ffffff !important;
+  text-transform: uppercase;
+  line-height: 21px;
+  font-size: 15px;
+  transition: var(--trans, color 0.4s ease 0s);
+}
+.navbar .nav-link:hover {
+  color: #ca6033 !important;
+}
 
 .highlight {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/engenharia.jpg");
@@ -195,14 +228,173 @@ body {
 }
 .highlight h1, .highlight p {
   color: #ffffff;
+  margin: 15px 0;
 }
 
-#product .item-product h3, #product .item-product p {
+#solicite {
+  padding-top: 100px;
+}
+#solicite h2 {
+  margin-bottom: 15px;
+}
+
+#sobre {
+  padding-top: 100px;
+}
+#sobre h2 {
+  margin-bottom: 15px;
+}
+
+#oque {
+  padding-top: 100px;
+}
+#oque h2 {
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 576px) {
+  #oque .row {
+    flex-direction: column-reverse;
+  }
+}
+
+#vantagens {
+  padding-top: 100px;
+}
+#vantagens h2 {
+  margin-bottom: 15px;
+}
+
+#obras {
+  padding-top: 100px;
+}
+#obras h2 {
+  margin-bottom: 15px;
+}
+#obras .card .card-img-top {
+  height: 400px;
+  object-fit: cover;
+}
+#obras .slick-dots {
+  bottom: -80px;
+}
+
+#servicos {
+  padding-top: 100px;
+}
+#servicos h2 {
+  margin-bottom: 15px;
+}
+#servicos .figure-servico {
+  width: 150px;
+  margin: auto;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+#servicos .figure-servico img {
+  max-width: 150px;
+  width: 100%;
+}
+
+#produto {
+  padding-top: 100px;
+}
+#produto h2 {
+  margin-bottom: 15px;
+}
+#produto .item-product h3, #produto .item-product p {
   text-align: center;
 }
+#produto .card {
+  box-shadow: 2px 3px 10px 1px rgba(0, 0, 0, 0.15);
+}
+#produto .card .card-img-top {
+  max-width: 300px;
+  height: 290px;
+  object-fit: contain;
+}
 
+#financiamentos {
+  padding-top: 100px;
+}
+#financiamentos h2 {
+  margin-bottom: 15px;
+}
+#financiamentos .figure-financ {
+  width: 180px;
+}
+#financiamentos .figure-financ img {
+  width: 100%;
+}
+
+#contato {
+  padding-top: 100px;
+}
+#contato h2 {
+  margin-bottom: 15px;
+}
+#contato form {
+  padding: 20px;
+  box-shadow: 2px 3px 10px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.slick-carousel {
+  width: 100%;
+}
+
+.slick-slider .slick-next::before, .slick-slider .slick-prev::before {
+  color: #ca6033;
+  font-family: "MazzardLight";
+  font-size: 80px;
+}
+.slick-slider .slick-next::before {
+  content: "›";
+}
+.slick-slider .slick-prev::before {
+  content: "‹";
+}
+.slick-slider .slick-dots li.slick-active {
+  color: #ca6033 !important;
+  font-size: 15px;
+}
+.slick-slider .slick-dots button:before {
+  color: #ca6033 !important;
+  font-size: 15px;
+}
+.slick-slider .slick-dots li button:before {
+  font-size: 15px !important;
+}
+
+@media only screen and (max-width: 576px) {
+  .slick-next::before, .slick-prev::before {
+    display: none;
+  }
+
+  .slick-next {
+    display: none !important;
+  }
+}
 footer {
   background-color: #ca6033;
+}
+footer .logo {
+  width: 200px;
+}
+footer h5, footer small {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+footer .list-unstyled li, footer .list-unstyled li a {
+  color: #ffffff;
+}
+footer .list-unstyled li {
+  display: flex;
+  align-items: center;
+}
+footer .list-unstyled li i {
+  font-size: 17px;
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

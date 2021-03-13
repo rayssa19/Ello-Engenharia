@@ -1,4 +1,9 @@
 .btn-orange {
     background-color: #ca6033;
     color: #ffffff;
+
+    &:hover {
+        color: #ffffff;
+        opacity: .9;
+    }
 }

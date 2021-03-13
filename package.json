@@ -19,6 +19,8 @@
   "homepage": "https://github.com/rayssa19/Ello-Engenharia#readme",
   "dependencies": {
     "bootstrap": "^5.0.0-beta2",
-    "node-sass": "^5.0.0"
+    "jquery": "^3.6.0",
+    "node-sass": "^5.0.0",
+    "slick-carousel": "^1.8.1"
   }
 }

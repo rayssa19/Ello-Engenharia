@@ -1,21 +1,29 @@
-//.navbar {
-//    background-color: #000000;
-//    padding: 15px 0;
-//    position: fixed;
-//    width: 100%;
-//    z-index: 1;
-//
-//    .nav-link {
-//        font-family: 'MazzardBold';
-//        color: #ffffff!important;
-//        text-transform: uppercase;
-//        line-height: 21px;
-//        font-size: 15px;
-//        transition: var(--trans,color .4s ease 0s);
-//
-//        &:hover {
-//            color: #ca6033!important;
-//        }
-//    }
-//
-//}
+.navbar {
+    background-color: #000000!important;
+    //padding: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+  .logo {
+    width: 80px;
+  }
+
+  a {
+    color: #ffffff;
+  }
+
+    .nav-link {
+        font-family: 'MazzardBold';
+        color: #ffffff!important;
+        text-transform: uppercase;
+        line-height: 21px;
+        font-size: 15px;
+        transition: var(--trans,color .4s ease 0s);
+
+        &:hover {
+            color: #ca6033!important;
+        }
+    }
+
+}

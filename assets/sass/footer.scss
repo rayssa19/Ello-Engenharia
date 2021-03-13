@@ -1,3 +1,27 @@
 footer {
     background-color: #ca6033;
+
+    .logo {
+        width: 200px;
+    }
+    h5, small {
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    .list-unstyled {
+        li, li a {
+            color: #ffffff;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+
+            i {
+                font-size: 17px;
+                margin-right: 5px;
+            }
+        }
+    }
 }
