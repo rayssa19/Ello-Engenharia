@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -244,6 +248,12 @@ h1, h2, h3, h4, h5 {
 #sobre h2 {
   margin-bottom: 15px;
 }
+@media only screen and (max-width: 576px) {
+  #sobre img {
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+}
 
 #oque {
   padding-top: 100px;
@@ -254,6 +264,10 @@ h1, h2, h3, h4, h5 {
 @media only screen and (max-width: 576px) {
   #oque .row {
     flex-direction: column-reverse;
+  }
+  #oque img {
+    margin-top: 20px;
+    border-radius: 10px;
   }
 }
 
@@ -313,6 +327,11 @@ h1, h2, h3, h4, h5 {
   height: 290px;
   object-fit: contain;
 }
+@media only screen and (max-width: 576px) {
+  #produto .card-img-top {
+    margin: auto;
+  }
+}
 
 #financiamentos {
   padding-top: 100px;
@@ -327,9 +346,6 @@ h1, h2, h3, h4, h5 {
   width: 100%;
 }
 
-#contato {
-  padding-top: 100px;
-}
 #contato h2 {
   margin-bottom: 15px;
 }
@@ -337,6 +353,11 @@ h1, h2, h3, h4, h5 {
   padding: 20px;
   box-shadow: 2px 3px 10px 1px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
+}
+@media only screen and (max-width: 576px) {
+  #contato {
+    padding-top: 100px;
+  }
 }
 
 .slick-carousel {
@@ -395,6 +416,11 @@ footer .list-unstyled li {
 footer .list-unstyled li i {
   font-size: 17px;
   margin-right: 5px;
+}
+@media only screen and (max-width: 576px) {
+  footer .logo {
+    margin: 20px auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

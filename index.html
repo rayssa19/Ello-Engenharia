@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.css">
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 
     <title>Ello Engenharia</title>
 </head>
@@ -27,7 +28,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#sobre">Sobre</a>
+                <a class="nav-link" onclick="rolar_para('#sobre')" href="#sobre">Sobre</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#oque">O que é?</a>
@@ -65,7 +66,7 @@
             </p>
         </div>
         <div class="col-md-6">
-            <img src="assets/images/engenharia.jpg" alt="" style="border-radius: 10px;">
+            <img src="assets/images/engenharia.jpg" alt="">
         </div>
     </div>
 </section>
@@ -73,7 +74,7 @@
 <section class="container" id="oque">
     <div class="row">
         <div class="col-md-6">
-            <img src="assets/images/energia-solar-sol-1.jpg" alt="" style="border-radius: 10px;">
+            <img src="assets/images/energia-solar-sol-1.jpg" alt="">
         </div>
         <div class="col-md-6">
             <h2>O que é energia fotovoltaica?</h2>
@@ -459,7 +460,7 @@
 
 <section class="container" id="servicos">
     <h2>Serviços</h2>
-    <div class="row py-5">
+    <div class="row py-3">
         <div class="col-md-4">
             <figure class="figure-servico">
                 <img class="m-auto" src="assets/images/servicos/projeto-eletrico.png" alt="">
@@ -486,7 +487,7 @@
 <section class="container" id="financiamentos">
     <h2>Financiamentos</h2>
 
-    <div class="row align-items-center py-5">
+    <div class="row align-items-center py-3">
         <div class="col-md-4">
             <figure class="figure-financ m-auto" style="width: 260px;">
                 <img class="m-auto" src="assets/images/financiamentos/santander-logo.png" alt="">
@@ -580,8 +581,6 @@
             $(".navbar-collapse").removeClass("show");
         });
     });
-
-
 </script>
 <script>
     function funcao1() {
